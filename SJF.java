@@ -1,4 +1,3 @@
-package com.company;
 import java.util.ArrayList;
 
 public class SJF {
@@ -105,8 +104,9 @@ public class SJF {
     }
 
     private void printOrder(){
-        for (int i = 0; i < SJFqueue.size(); i++) {
+        for (int i = 0; i < SJFqueue.size()-1; i++) {
             System.out.print(SJFqueue.get(i).getProcessName());
         }
+        System.out.println();
     }
 }
